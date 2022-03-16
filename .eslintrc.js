@@ -9,6 +9,8 @@ module.exports = {
     'prettier'
   ],
   rules: {
+    // 缩进
+    "indent": ["error", 2],
     // 禁止使用 var
     'no-var': 'error',
     // 使用结尾分号
