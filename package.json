@@ -1,0 +1,30 @@
+{
+  "name": "design-pattern",
+  "version": "1.0.0",
+  "description": "使用typescript实现设计模式",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengxinssfd/design-pattern.git"
+  },
+  "author": "DYH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mengxinssfd/design-pattern/issues"
+  },
+  "homepage": "https://github.com/mengxinssfd/design-pattern#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.4.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  }
+}
