@@ -1,5 +1,5 @@
-import LazySingleton from '../src/singleton/Lazy';
-import HungrySingleton from '../src/singleton/Hungry';
+import LazySingleton from '../src/Singleton/Lazy';
+import HungrySingleton from '../src/Singleton/Hungry';
 
 describe('singleton', () => {
   test('lazy', () => {
