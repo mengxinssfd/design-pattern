@@ -1,4 +1,4 @@
-import { cloneStrategies } from '../src/Strategy';
+import { cloneStrategies } from '../src/Behavioral/Strategy';
 
 describe('Strategy', () => {
   test('cloneStrategies', () => {

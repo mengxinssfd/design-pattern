@@ -1,4 +1,4 @@
-import { baseDecor, receiveDataDecor } from '../src/Decorator';
+import { baseDecor, receiveDataDecor } from '../src/Structural/Decorator';
 
 describe('Decorator', () => {
   const originLog = console.log;
