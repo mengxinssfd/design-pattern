@@ -1,4 +1,11 @@
 import { cloneStrategies } from '../src/Behavioral/Strategy';
+import {
+  CalcContext,
+  DivStrategy,
+  MinusStrategy,
+  PlusStrategy,
+  TimesStrategy,
+} from '../src/Behavioral/Strategy/ObjectOriented';
 
 describe('Strategy', () => {
   test('cloneStrategies', () => {
@@ -22,5 +29,18 @@ describe('Strategy', () => {
       // 严格不等于
       expect(it).not.toBe(cloned[i]);
     });
+  });
+  test('classic', () => {
+    const calc = new CalcContext(new PlusStrategy());
+    expect(calc.doCalc(1, 2)).toBe(3);
+
+    calc.setStrategy(new MinusStrategy());
+    expect(calc.doCalc(1, 2)).toBe(-1);
+
+    calc.setStrategy(new TimesStrategy());
+    expect(calc.doCalc(1, 2)).toBe(2);
+
+    calc.setStrategy(new DivStrategy());
+    expect(calc.doCalc(1, 2)).toBe(0.5);
   });
 });
