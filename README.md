@@ -22,8 +22,13 @@
   在`Angular`和`NestJS`中有大量装饰器使用  
   [方法装饰器实现](src/Structural/Decorator/index.ts)  
   [使用方法](./__test__/Decorator.test.ts)
+- [组合模式(Composite patterns)](src/Structural/Composite)
+  树的形式,类似前端的组件化
 
-  
+## 相似的模式
+简单工厂和策略：工厂注重生产，根据要求生产出对应的产品；而策略注重过程，需要xx策略去做某事
+简单工厂模式：根据客户选择的条件，来帮客户创建一个对象。
+策略模式：客户给它一个创建好的对象，它来帮客户做相应的事。  
 
 
 
