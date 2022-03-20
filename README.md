@@ -15,6 +15,19 @@
 1. [懒汉式](src/Creational/Singleton/Lazy.ts)
 2. [饿汉式](src/Creational/Singleton/Hungry.ts)
 
+### 工厂模式
+
+分为 3 种模式：简单工厂模式、工厂模式、抽象工厂模式  
+概括：
+
+- 简单工厂：一个工厂类，一个产品抽象类。
+- 工厂方法：多个工厂类，一个产品抽象类。
+- 抽象工厂：多个工厂类，多个产品抽象类。
+
+#### [简单工厂模式](src/Creational/SimpleFactory)
+
+不属于 23 种设计模式中的一种
+
 ## [行为型(Behavioral patterns)](./src/Behavioral)
 
 ### 策略模式(Strategy Pattern)
