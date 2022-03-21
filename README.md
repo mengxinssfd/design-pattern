@@ -28,6 +28,8 @@
 
 不属于 23 种设计模式中的一种
 
+#### [工厂模式](src/Creational/Factory)
+
 ## [行为型(Behavioral patterns)](./src/Behavioral)
 
 ### 策略模式(Strategy Pattern)
