@@ -50,6 +50,10 @@
 
 - [查找爱吃某食物的动物](./src/Behavioral/ResponsibilityChain/FindEatFoodAnimal.ts)
 
+### [中介者模式(Mediator Pattern)](src/Behavioral/Mediator)
+类似子组件通过父组件通信，避免交叉通信，跟观察者模式很像
+
+
 ## [结构型(Structural patterns)](./src/Structural)
 
 ### 装饰器模式(Decorator Pattern)
