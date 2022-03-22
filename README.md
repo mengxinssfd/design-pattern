@@ -30,6 +30,8 @@
 
 #### [工厂模式](src/Creational/Factory)
 
+#### [抽象工厂模式](src/Creational/AbstractFactory)
+
 ## [行为型(Behavioral patterns)](./src/Behavioral)
 
 ### 策略模式(Strategy Pattern)
