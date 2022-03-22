@@ -1,12 +1,12 @@
-import { Observer } from '@/Behavioral/Observer/Observer';
+import { Observer } from './Observer';
 
-interface Subject {
+export interface Subject {
   attach(observer: Observer);
   detach(observer: Observer);
   notify();
 }
 
-class ConcreteSubject implements Subject {
+export class ConcreteSubject implements Subject {
   public state!: number;
   private observers: Observer[] = [];
   attach(observer: Observer) {
@@ -29,5 +29,15 @@ class ConcreteSubject implements Subject {
     console.log('Subject: Detached an observer.');
   }
 
-  notify() {}
+  notify() {
+    this.observers.forEach((it) => it.update(this));
+  }
+
+  someBusinessLogin(){
+    console.log('\nSubject: I\'m doing something important.');
+    this.state = Math.floor(Math.random() * (10+1));
+
+    console.log(`Subject: My state has just changed to: ${this.state}`);
+    this.notify();
+  }
 }
