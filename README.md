@@ -52,6 +52,12 @@
 
 ### [中介者模式(Mediator Pattern)](src/Behavioral/Mediator)
 类似子组件通过父组件通信，避免交叉通信，跟观察者模式很像
+区别
+- 中介者模式：Mediator更像上帝对象，可以用子组件的除私有外所有方法，操作集中在中介者
+- 观察者模式：Subject对象只是通知观察的对象，至于观察后做什么不管
+
+### [观察者模式(Observer Pattern)](src/Behavioral/Observer)
+跟发布订阅模式的关系，像工厂模式与抽象工厂模式的区别，发布订阅模式里的每一个类别都是一个观察者模式。
 
 
 ## [结构型(Structural patterns)](./src/Structural)
