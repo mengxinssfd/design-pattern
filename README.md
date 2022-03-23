@@ -51,14 +51,16 @@
 - [查找爱吃某食物的动物](./src/Behavioral/ResponsibilityChain/FindEatFoodAnimal.ts)
 
 ### [中介者模式(Mediator Pattern)](src/Behavioral/Mediator)
+
 类似子组件通过父组件通信，避免交叉通信，跟观察者模式很像
 区别
-- 中介者模式：Mediator更像上帝对象，可以用子组件的除私有外所有方法，操作集中在中介者
-- 观察者模式：Subject对象只是通知观察的对象，至于观察后做什么不管
+
+- 中介者模式：Mediator 更像上帝对象，可以用子组件的除私有外所有方法，操作集中在中介者
+- 观察者模式：Subject 对象只是通知观察的对象，至于观察后做什么不管
 
 ### [观察者模式(Observer Pattern)](src/Behavioral/Observer)
-跟发布订阅模式的关系，像工厂模式与抽象工厂模式的区别，发布订阅模式里的每一个类别都是一个观察者模式。
 
+跟发布订阅模式的关系，像工厂模式与抽象工厂模式的区别，发布订阅模式里的每一个类别都是一个观察者模式。
 
 ## [结构型(Structural patterns)](./src/Structural)
 
@@ -74,6 +76,10 @@
 ### [组合模式(Composite patterns)](src/Structural/Composite)
 
 树的形式,类似前端的组件化
+
+### [外观模式(Facade patterns)](src/Structural/Facade)
+
+类似黑盒子，将多个复杂操作集合简化成一个
 
 ## 相似的模式
 
