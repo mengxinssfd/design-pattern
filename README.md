@@ -79,7 +79,11 @@
 
 ### [外观模式(Facade patterns)](src/Structural/Facade)
 
-类似黑盒子，将多个复杂操作集合简化成一个
+类似黑盒，将多个复杂操作集合简化成一个
+
+### [享元模式(Flyweight patterns)](src/Structural/Flyweight)
+
+共享数据，类似算法中有用到的hashmap缓存
 
 ## 相似的模式
 
