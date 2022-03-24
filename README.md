@@ -44,6 +44,13 @@
  [实现](src/Behavioral/Strategy/index.ts)  
  [使用方法](./__test__/Strategy.test.ts)
 
+### [状态模式(State Pattern)](src/Behavioral/State)
+
+跟策略模式很像
+
+状态可被视为策略的扩展。 两者都基于组合机制： 它们都通过将部分工作委派给 “帮手” 对象来改变其在不同情景下的行为。 策略使得这些对象相互之间完全独立， 它们不知道其他对象的存在。 但状态模式没有限制具体状态之间的依赖， 且允许它们自行改变在不同情景下的状态。
+
+
 ### [责任链模式](./src/Behavioral/ResponsibilityChain)
 
 例子：
