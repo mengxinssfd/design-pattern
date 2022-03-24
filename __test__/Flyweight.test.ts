@@ -1,11 +1,8 @@
 import useMockConsoleLog from './useMockConsoleLog';
 import { FlyweightFactory } from '../src/Structural/Flyweight';
-type Tuple<T, N extends number, R extends unknown[] = []> =
-  N extends N
-    ? number extends N
-      ? T[]
-      : R['length'] extends N ? R : Tuple<T, N, [T, ...R]>
-    : never;
+type Tuple<T, N extends number, R extends unknown[] = []> = R['length'] extends N
+  ? R
+  : Tuple<T, N, [T, ...R]>;
 
 describe('Flyweight', () => {
   let mockLog: jest.Mock;
@@ -22,32 +19,29 @@ describe('Flyweight', () => {
     ];
     const factory = new FlyweightFactory(init);
 
+    type RestParam = Tuple<string, 5>;
     function addCarToPoliceDatabase(
       ff: FlyweightFactory,
-      plates: string,
-      owner: string,
-      brand: string,
-      model: string,
-      color: string,
+      ...[plates, owner, brand, model, color]: RestParam
     ) {
       const flyweight = ff.getFlyweight([brand, model, color]);
       flyweight.operation([plates, owner]);
     }
     // factory.listFlyweights();
-    type Rest = Tuple<string, 5>;
-    const list: Rest = ['CL234IR', 'James Doe', ...init[3]];
-    const list2: Rest = ['CL234IR', 'James Doe', 'BMW', 'X1', 'red'];
-    addCarToPoliceDatabase(factory, ...list);
-    addCarToPoliceDatabase(factory, ...list2);
+
+    const param1: RestParam = ['CL234IR', 'James Doe', ...init[3]];
+    const param2: RestParam = ['CL234IR', 'James Doe', 'BMW', 'X1', 'red'];
+    addCarToPoliceDatabase(factory, ...param1);
+    addCarToPoliceDatabase(factory, ...param2);
     expect(mockLog.mock.calls.map((i) => i[0])).toEqual([
       'reusing existing flyweight',
-      `Flyweight: Displaying shared (${JSON.stringify(list.slice(2))}) and unique (${JSON.stringify(
-        list.slice(0, 2),
-      )}) state.`,
+      `Flyweight: Displaying shared (${JSON.stringify(
+        param1.slice(2),
+      )}) and unique (${JSON.stringify(param1.slice(0, 2))}) state.`,
       'creating new one',
       `Flyweight: Displaying shared (${JSON.stringify(
-        list2.slice(2),
-      )}) and unique (${JSON.stringify(list2.slice(0, 2))}) state.`,
+        param2.slice(2),
+      )}) and unique (${JSON.stringify(param2.slice(0, 2))}) state.`,
     ]);
   });
 });
