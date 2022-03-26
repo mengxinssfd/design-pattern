@@ -116,6 +116,14 @@
 
 js中有个Proxy是用到了该模式
 
+### [适配器模式(Adapter patterns)](src/Structural/Adapter)
+
+适配器模式
+
+### [桥接模式(Bridge patterns)](src/Structural/Bridge)
+
+桥接模式和适配器模式及策略模式都很像
+
 ## 相似的模式
 
 简单工厂和策略：工厂注重生产，根据要求生产出对应的产品；而策略注重过程，需要 xx 策略去做某事
