@@ -1,9 +1,6 @@
 import useMockConsoleLog from './useMockConsoleLog';
 describe('useMockConsoleLog', () => {
-  let mockLog!: jest.Mock;
-  useMockConsoleLog((fn) => {
-    mockLog = fn;
-  });
+  let mockLog = useMockConsoleLog((l) => (mockLog = l));
   test('mockLog 1', () => {
     expect(console.log).toBe(mockLog); // true
     console.log(1);
