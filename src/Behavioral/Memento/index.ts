@@ -31,7 +31,7 @@ export class Originator {
 export class ConcreteMemento implements Memento {
   private readonly date: string;
   constructor(private state: string) {
-    this.date = new Date().toISOString().slice(0, 19).replace('t', ' ');
+    this.date = new Date().toISOString().slice(0, 19).replace('T', ' ');
   }
   getDate(): string {
     return this.date;
@@ -48,7 +48,7 @@ export class Caretaker {
   private mementos: Memento[] = [];
   constructor(private originator: Originator) {}
   backup() {
-    console.log("\nCaretaker: Saving Originator's state...");
+    console.log("Caretaker: Saving Originator's state...");
     this.mementos.push(this.originator.save());
   }
   undo() {
