@@ -84,6 +84,15 @@ js中内置有迭代器，用法类似rust，需要获取到迭代器遍历
 
 ### [备忘录模式(Memento patterns)](src/Behavioral/Memento)
 
+可实现历史记录的功能
+
+### [模板方法模式(Template Method patterns)](src/Behavioral/TemplateMethod)
+
+> 模板方法模式是一种行为设计模式， 它在超类中定义了一个算法的框架， 允许子类在不修改结构的情况下重写算法的特定步骤。
+
+类似普通的class继承，父类留下几个要实现的给子类
+类似前端的模版，有几个插槽可供修改，模板其他地方不变
+
 
 ### [责任链模式](./src/Behavioral/ResponsibilityChain)
 
