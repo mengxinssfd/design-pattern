@@ -66,6 +66,10 @@
 - 中介者模式：子组件通过父组件通信，避免交叉通信
 - 状态模式：状态生成其他状态给上下文替换
 
+### [命令模式(Command patterns)](src/Behavioral/Command)
+
+类似js的回调的面向对象写法
+
 
 ### [责任链模式](./src/Behavioral/ResponsibilityChain)
 
