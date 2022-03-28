@@ -70,6 +70,12 @@
 
 类似js的回调的面向对象写法
 
+### [迭代器模式(Iterator patterns)](src/Behavioral/Iterator)
+
+js中内置有迭代器，用法类似rust，需要获取到迭代器遍历
+
+一般直接用数组就可以了，暂时没想到要怎么使用
+
 
 ### [责任链模式](./src/Behavioral/ResponsibilityChain)
 
