@@ -2,12 +2,12 @@ import {
   AbstractProductA,
   ConcreteProductA1,
   ConcreteProductA2,
-} from '../Product/A';
+} from '@/Creational/AbstractFactory/Product/A';
 import {
   AbstractProductB,
   ConcreteProductB1,
   ConcreteProductB2,
-} from '../Product/B';
+} from '@/Creational/AbstractFactory/Product/B';
 
 interface AbstractFactory {
   createProductA(): AbstractProductA;

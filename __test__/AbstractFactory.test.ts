@@ -1,6 +1,6 @@
-import {ConcreteProductA1, ConcreteProductA2} from '../src/Creational/AbstractFactory/Product/A';
-import {ConcreteProductB1, ConcreteProductB2} from '../src/Creational/AbstractFactory/Product/B';
-import { ConcreteFactory1, ConcreteFactory2 } from '../src/Creational/AbstractFactory/Factory';
+import {ConcreteProductA1, ConcreteProductA2} from '@/Creational/AbstractFactory/Product/A';
+import {ConcreteProductB1, ConcreteProductB2} from '@/Creational/AbstractFactory/Product/B';
+import { ConcreteFactory1, ConcreteFactory2 } from '@/Creational/AbstractFactory/Factory';
 
 test('AbstractFactory', () => {
   const f1 = new ConcreteFactory1();

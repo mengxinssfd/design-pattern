@@ -93,6 +93,11 @@ js中内置有迭代器，用法类似rust，需要获取到迭代器遍历
 类似普通的class继承，父类留下几个要实现的给子类
 类似前端的模版，有几个插槽可供修改，模板其他地方不变
 
+### [访问者模式(Visitor patterns)](src/Behavioral/Visitor)
+
+
+类似普通的class继承，父类留下几个要实现的给子类
+类似前端的模版，有几个插槽可供修改，模板其他地方不变
 
 ### [责任链模式](./src/Behavioral/ResponsibilityChain)
 
